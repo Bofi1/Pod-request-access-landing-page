@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <section class="bg-[#121725] h-[100vh]">
+      <img
+        class="absolute w-full h-full opacity-20"
+        src="assets/mobile/image-host.jpg"
+        alt=""
+      />
+
+      <nav class="flex justify-center py-20 z-10">
+        <img src="assets/desktop/logo.svg" alt="" />
+      </nav>
+      <article class="flex flex-col z-10">
+        <main class="px-5 z-10">
+          <h1
+            class="text-[#67CBAA] font-chivo text-2xl font-extralight text-center"
+          >
+            PUBLISH YOUR PODCASTS <br />
+            <span class="text-white">EVERYWHERE</span>
+          </h1>
+
+          <h2 class="text-center text-[#99A4B5] mt-5">
+            Upload your audio to Pod with a single click. We´ll then distribute
+            your podcast to Spotify. Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </h2>
+
+          <div class="flex justify-between items-center mt-7">
+            <img
+              class="h-4"
+              src="assets/desktop/spotify.svg"
+              alt="spotify-logo"
+            />
+            <img
+              class="h-4"
+              src="assets/desktop/apple-podcast.svg"
+              alt="applePod-logo"
+            />
+            <img
+              class="h-3"
+              src="assets/desktop/google-podcasts.svg"
+              alt="googlePod-logo"
+            />
+            <img
+              class="h-4"
+              src="assets/desktop/pocket-casts.svg"
+              alt="pocketPod-logo"
+            />
+          </div>
+
+          <form id="form" novalidate>
+            <input
+              id="email"
+              class="w-full rounded-full appearance-none outline-none border-none focus:ring-0 px-7 py-4 font-bold mt-10"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
+
+            <span class="text-[red] font-bold ml-7 relative hidden" id="error">
+              Oops! Please check your email</span
+            >
+
+            <button
+              class="w-full rounded-full px-7 py-4 font-bold mt-5 bg-[#67CBAA] text-[#121725]"
+              type="submit"
+              value="Request Access"
+            >
+              Request Access
+            </button>
+          </form>
+        </main>
+      </article>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
