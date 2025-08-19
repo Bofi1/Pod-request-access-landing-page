@@ -6,73 +6,96 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
-    <section class="bg-[#121725] h-[100vh]">
+  <body class="bg-[#121725]">
+    <section class="bg-[#121725] h-[100vh] tablet:max-h-[794px]">
       <img
-        class="absolute w-full h-full opacity-20"
+        class="absolute w-full h-full opacity-20 tablet:hidden"
         src="assets/mobile/image-host.jpg"
         alt=""
       />
 
-      <nav class="flex justify-center py-20 z-10">
+      <img
+        class="hidden tablet:flex absolute top-0 right-0 z-[9]"
+        src="assets/tablet/image-host.jpg"
+        alt=""
+      />
+
+      <nav
+        class="flex justify-center py-20 z-10 tablet:justify-start tablet:px-10 tablet:pb-[200px]"
+      >
         <img src="assets/desktop/logo.svg" alt="" />
       </nav>
       <article class="flex flex-col z-10">
-        <main class="px-5 z-10">
+        <main
+          class="px-5 z-10 tablet:pl-10 0 tablet:mr-[80px] tablet:flex tablet:flex-col tablet:bg-[#121725] tablet:py-20 tablet:mt-[-60px] tablet:px-10"
+        >
           <h1
-            class="text-[#67CBAA] font-chivo text-2xl font-extralight text-center"
+            class="text-[#67CBAA] font-chivo text-2xl font-extralight text-center tablet:text-start tablet:text-5xl tablet:leading-[60px]"
           >
             PUBLISH YOUR PODCASTS <br />
             <span class="text-white">EVERYWHERE</span>
           </h1>
 
-          <h2 class="text-center text-[#99A4B5] mt-5">
+          <h2
+            class="text-center text-[#99A4B5] mt-5 tablet:text-start tablet:mr-[170px] tablet:text-lg tablet:mt-14"
+          >
             Upload your audio to Pod with a single click. We´ll then distribute
             your podcast to Spotify. Apple Podcasts, Google Podcasts, Pocket
             Casts and more!
           </h2>
 
-          <div class="flex justify-between items-center mt-7">
+          <!-- logos -->
+          <div class="flex justify-between items-center mt-7 tablet:order-2">
             <img
-              class="h-4"
+              class="h-4 tablet:h-7"
               src="assets/desktop/spotify.svg"
               alt="spotify-logo"
             />
             <img
-              class="h-4"
+              class="h-4 tablet:h-7"
               src="assets/desktop/apple-podcast.svg"
               alt="applePod-logo"
             />
             <img
-              class="h-3"
+              class="h-3 tablet:h-6"
               src="assets/desktop/google-podcasts.svg"
               alt="googlePod-logo"
             />
             <img
-              class="h-4"
+              class="h-4 tablet:h-7"
               src="assets/desktop/pocket-casts.svg"
               alt="pocketPod-logo"
             />
           </div>
 
-          <form id="form" novalidate>
+          <form
+            class="tablet:flex tablet:flex-col tablet:relative tablet:items-center tablet:mr-[170px] tablet:order-1"
+            id="form"
+            novalidate
+          >
             <input
               id="email"
-              class="w-full rounded-full appearance-none outline-none border-none focus:ring-0 px-7 py-4 font-bold mt-10"
+              class="w-full rounded-full bg-[#2C344B] appearance-none outline-none px-7 py-4 font-bold mt-10 tablet:py-6"
               type="email"
               name="email"
               placeholder="Email address"
               required
             />
 
-            <span class="text-[red] font-bold ml-7 relative hidden" id="error">
-              Oops! Please check your email</span
+            <label
+              for="email"
+              class="text-[#FA3E3D] font-bold ml-7 relative hidden mt-2 tablet:text-start tablet:w-full"
+              id="error"
+            >
+              Oops! Please check your email</label
+            >
             >
 
             <button
-              class="w-full rounded-full px-7 py-4 font-bold mt-5 bg-[#67CBAA] text-[#121725]"
+              class="w-full rounded-full px-7 py-4 font-bold mt-5 bg-[#67CBAA] text-[#121725] tablet:absolute tablet:w-[200px] tablet:right-3 tablet:top-7"
               type="submit"
               value="Request Access"
+              id="submit"
             >
               Request Access
             </button>

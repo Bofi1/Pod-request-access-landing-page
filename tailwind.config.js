@@ -3,6 +3,9 @@ module.exports = {
   content: ["index.html"],
   theme: {
     extend: {
+      screens: {
+        tablet: "768px",
+      },
       fontFamily: {
         chivo: ["'Chivo'", "sans-serif"],
       },

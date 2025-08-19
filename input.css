@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.error {
+  border-color: #fa3e3d;
+  border-width: 3px;
+}
