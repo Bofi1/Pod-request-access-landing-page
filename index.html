@@ -6,17 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-[#121725]">
-    <section class="bg-[#121725] h-[100vh] tablet:max-h-[794px]">
+  <body class="bg-[#121725] desktop:flex desktop:flex-col items-center">
+    <section
+      class="bg-[#121725] h-[100vh] tablet:max-h-[794px] max-w-[1440px] relative w-full"
+    >
       <img
-        class="absolute w-full h-full opacity-20 tablet:hidden"
+        class="absolute w-full opacity-20 tablet:hidden"
         src="assets/mobile/image-host.jpg"
         alt=""
       />
 
       <img
-        class="hidden tablet:flex absolute top-0 right-0 z-[9]"
+        class="hidden tablet:flex desktop:hidden absolute top-0 right-0 z-[9]"
         src="assets/tablet/image-host.jpg"
+        alt=""
+      />
+
+      <img
+        class="hidden desktop:flex absolute top-[130px] right-0 z-[9]"
+        src="assets/desktop/image-host.jpg"
         alt=""
       />
 
@@ -27,21 +35,23 @@
       </nav>
       <article class="flex flex-col z-10">
         <main
-          class="px-5 z-10 tablet:pl-10 0 tablet:mr-[80px] tablet:flex tablet:flex-col tablet:bg-[#121725] tablet:py-20 tablet:mt-[-60px] tablet:px-10"
+          class="px-5 z-10 tablet:pl-10 0 tablet:mr-[80px] tablet:flex tablet:flex-col tablet:bg-[#121725] tablet:py-20 tablet:mt-[-60px] tablet:px-10 desktop:max-w-[990px] desktop:mt-[-100px]"
         >
           <h1
-            class="text-[#67CBAA] font-chivo text-2xl font-extralight text-center tablet:text-start tablet:text-5xl tablet:leading-[60px]"
+            class="text-[#67CBAA] font-chivo text-2xl font-extralight text-center tablet:text-start tablet:text-5xl tablet:leading-[60px] desktop:text-7xl"
           >
             PUBLISH YOUR PODCASTS <br />
             <span class="text-white">EVERYWHERE</span>
           </h1>
 
           <h2
-            class="text-center text-[#99A4B5] mt-5 tablet:text-start tablet:mr-[170px] tablet:text-lg tablet:mt-14"
+            class="text-center text-[#99A4B5] mt-5 tablet:text-start tablet:mr-[170px] tablet:text-lg tablet:mt-14 desktop:text-xl"
           >
-            Upload your audio to Pod with a single click. We´ll then distribute
-            your podcast to Spotify. Apple Podcasts, Google Podcasts, Pocket
-            Casts and more!
+            Upload your audio to Pod with a single click. We´ll
+            <br class="hidden tablet:flex" />
+            then distribute your podcast to Spotify. Apple
+            <br class="hidden tablet:flex" />
+            Podcasts, Google Podcasts, Pocket Casts and more!
           </h2>
 
           <!-- logos -->
@@ -69,13 +79,13 @@
           </div>
 
           <form
-            class="tablet:flex tablet:flex-col tablet:relative tablet:items-center tablet:mr-[170px] tablet:order-1"
+            class="tablet:flex tablet:flex-col tablet:relative tablet:item-start tablet:mr-[170px] tablet:order-1 desktop:mb-5"
             id="form"
             novalidate
           >
             <input
               id="email"
-              class="w-full rounded-full bg-[#2C344B] appearance-none outline-none px-7 py-4 font-bold mt-10 tablet:py-6"
+              class="w-full rounded-full bg-[#2C344B] appearance-none outline-none px-7 py-4 font-bold mt-10 tablet:py-6 tablet:w-[430px] tablet:pr-[220px] desktop:w-[540px]"
               type="email"
               name="email"
               placeholder="Email address"
@@ -92,7 +102,7 @@
             >
 
             <button
-              class="w-full rounded-full px-7 py-4 font-bold mt-5 bg-[#67CBAA] text-[#121725] tablet:absolute tablet:w-[200px] tablet:right-3 tablet:top-7"
+              class="w-full rounded-full mb-10 px-7 py-4 font-bold mt-5 bg-[#67CBAA] hover:bg-[#73e3be] text-[#121725] tablet:absolute tablet:w-[200px] tablet:left-[220px] tablet:top-7 desktop:left-[330px]"
               type="submit"
               value="Request Access"
               id="submit"

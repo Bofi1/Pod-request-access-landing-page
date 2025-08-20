@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
       error.classList.add("hidden"); // valid email, hidden error
       email.classList.remove("error");
       submit.classList.remove("tablet:top-[30px]");
+      submit.classList.remove("desktop:top-[30px]");
     } else {
       error.classList.remove("hidden"); // not valid, show error
       email.classList.add("error");
       submit.classList.add("tablet:top-[30px]");
+      submit.classList.add("desktop:top-[30px]");
     }
   });
 
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       error.classList.remove("hidden");
       email.classList.add("error");
       submit.classList.add("tablet:top-[30px]");
+      submit.classList.add("desktop:top-[30px]");
     }
   });
 });
